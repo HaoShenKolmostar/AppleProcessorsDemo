@@ -5,6 +5,36 @@
 	<key>logFormatVersion</key>
 	<integer>9</integer>
 	<key>logs</key>
-	<dict/>
+	<dict>
+		<key>61CC9044-24CD-41FC-A657-207699B75C05</key>
+		<dict>
+			<key>className</key>
+			<string>IDEActivityLogSection</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>61CC9044-24CD-41FC-A657-207699B75C05.xcactivitylog</string>
+			<key>highLevelStatus</key>
+			<string>S</string>
+			<key>schemeIdentifier-containerName</key>
+			<string>AppleProcessorsDemo project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>DemoOSX</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>0</integer>
+			<key>signature</key>
+			<string>Build DemoOSX</string>
+			<key>timeStartedRecording</key>
+			<real>560934422.02734804</real>
+			<key>timeStoppedRecording</key>
+			<real>560934433.80890799</real>
+			<key>title</key>
+			<string>Build DemoOSX</string>
+			<key>uniqueIdentifier</key>
+			<string>61CC9044-24CD-41FC-A657-207699B75C05</string>
+		</dict>
+	</dict>
 </dict>
 </plist>
