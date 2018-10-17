@@ -17,6 +17,18 @@
 		FFEFE72A216F2DE4002AD211 /* DemoIOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE728216F2DE4002AD211 /* DemoIOS.xcdatamodeld */; };
 		FFEFE72C216F2DE5002AD211 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEFE72B216F2DE5002AD211 /* Assets.xcassets */; };
 		FFEFE72F216F2DE5002AD211 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFEFE72D216F2DE5002AD211 /* LaunchScreen.storyboard */; };
+		FFEFE736216F3262002AD211 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE735216F3262002AD211 /* Matrix.swift */; };
+		FFEFE739216F3295002AD211 /* MPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE738216F3295002AD211 /* MPS.swift */; };
+		FFEFE73B216F329F002AD211 /* BLAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73A216F329F002AD211 /* BLAS.swift */; };
+		FFEFE73D216F53DD002AD211 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73C216F53DD002AD211 /* Utils.swift */; };
+		FFEFE73F216F65ED002AD211 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73E216F65ED002AD211 /* Runner.swift */; };
+		FFEFE740216F83D3002AD211 /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE735216F3262002AD211 /* Matrix.swift */; };
+		FFEFE741216F83D3002AD211 /* Runner.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73E216F65ED002AD211 /* Runner.swift */; };
+		FFEFE742216F83D3002AD211 /* MPS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE738216F3295002AD211 /* MPS.swift */; };
+		FFEFE743216F83D3002AD211 /* BLAS.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73A216F329F002AD211 /* BLAS.swift */; };
+		FFEFE744216F83D3002AD211 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE73C216F53DD002AD211 /* Utils.swift */; };
+		FFEFE74B21765395002AD211 /* matrixmul.c in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE74A21765395002AD211 /* matrixmul.c */; };
+		FFEFE74C2176639B002AD211 /* matrixmul.h in Sources */ = {isa = PBXBuildFile; fileRef = FFEFE74821765375002AD211 /* matrixmul.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +47,16 @@
 		FFEFE72B216F2DE5002AD211 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFEFE72E216F2DE5002AD211 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFEFE730216F2DE5002AD211 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFEFE735216F3262002AD211 /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		FFEFE738216F3295002AD211 /* MPS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MPS.swift; sourceTree = "<group>"; };
+		FFEFE73A216F329F002AD211 /* BLAS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BLAS.swift; sourceTree = "<group>"; };
+		FFEFE73C216F53DD002AD211 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		FFEFE73E216F65ED002AD211 /* Runner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Runner.swift; sourceTree = "<group>"; };
+		FFEFE74821765375002AD211 /* matrixmul.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = matrixmul.h; sourceTree = "<group>"; };
+		FFEFE74921765395002AD211 /* DemoOSX-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoOSX-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFEFE74A21765395002AD211 /* matrixmul.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = matrixmul.c; sourceTree = "<group>"; };
+		FFEFE75021766444002AD211 /* DemoIOS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemoIOS-Bridging-Header.h"; sourceTree = "<group>"; };
+		FFEFE75421767997002AD211 /* matrixmul.cl */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.opencl; path = matrixmul.cl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,7 @@
 		FFEFE6FF216F2D92002AD211 = {
 			isa = PBXGroup;
 			children = (
+				FFEFE737216F3274002AD211 /* Common */,
 				FFEFE70C216F2DCD002AD211 /* DemoOSX */,
 				FFEFE720216F2DE4002AD211 /* DemoIOS */,
 				FFEFE70B216F2DCD002AD211 /* Products */,
@@ -98,6 +121,39 @@
 				FFEFE728216F2DE4002AD211 /* DemoIOS.xcdatamodeld */,
 			);
 			path = DemoIOS;
+			sourceTree = "<group>";
+		};
+		FFEFE734216F3233002AD211 /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				FFEFE738216F3295002AD211 /* MPS.swift */,
+				FFEFE73A216F329F002AD211 /* BLAS.swift */,
+				FFEFE74821765375002AD211 /* matrixmul.h */,
+				FFEFE74A21765395002AD211 /* matrixmul.c */,
+				FFEFE74921765395002AD211 /* DemoOSX-Bridging-Header.h */,
+				FFEFE75021766444002AD211 /* DemoIOS-Bridging-Header.h */,
+				FFEFE75421767997002AD211 /* matrixmul.cl */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
+		FFEFE737216F3274002AD211 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FFEFE73C216F53DD002AD211 /* Utils.swift */,
+				FFEFE734216F3233002AD211 /* Functions */,
+				FFEFE745216F8786002AD211 /* Data */,
+				FFEFE73E216F65ED002AD211 /* Runner.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		FFEFE745216F8786002AD211 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FFEFE735216F3262002AD211 /* Matrix.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +204,11 @@
 				TargetAttributes = {
 					FFEFE709216F2DCD002AD211 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 					FFEFE71E216F2DE4002AD211 = {
 						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = 1000;
 					};
 				};
 			};
@@ -200,8 +258,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEFE74C2176639B002AD211 /* matrixmul.h in Sources */,
+				FFEFE739216F3295002AD211 /* MPS.swift in Sources */,
+				FFEFE736216F3262002AD211 /* Matrix.swift in Sources */,
 				FFEFE710216F2DCD002AD211 /* ViewController.swift in Sources */,
+				FFEFE74B21765395002AD211 /* matrixmul.c in Sources */,
 				FFEFE70E216F2DCD002AD211 /* AppDelegate.swift in Sources */,
+				FFEFE73B216F329F002AD211 /* BLAS.swift in Sources */,
+				FFEFE73D216F53DD002AD211 /* Utils.swift in Sources */,
+				FFEFE73F216F65ED002AD211 /* Runner.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFEFE740216F83D3002AD211 /* Matrix.swift in Sources */,
+				FFEFE741216F83D3002AD211 /* Runner.swift in Sources */,
+				FFEFE742216F83D3002AD211 /* MPS.swift in Sources */,
+				FFEFE743216F83D3002AD211 /* BLAS.swift in Sources */,
+				FFEFE744216F83D3002AD211 /* Utils.swift in Sources */,
 				FFEFE72A216F2DE4002AD211 /* DemoIOS.xcdatamodeld in Sources */,
 				FFEFE724216F2DE4002AD211 /* ViewController.swift in Sources */,
 				FFEFE722216F2DE4002AD211 /* AppDelegate.swift in Sources */,
@@ -326,6 +396,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/Functions/DemoOSX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
@@ -393,6 +464,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/Functions/DemoOSX-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 			};
@@ -465,6 +537,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/Functions/DemoIOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,6 +604,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "Common/Functions/DemoIOS-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

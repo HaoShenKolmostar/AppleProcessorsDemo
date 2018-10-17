@@ -19,7 +19,6 @@ public class MPSMultiplication {
 
     init(matrixGroup: MatrixGroup) {
         self.commandQueue = Device.makeCommandQueue()
-
         self.matrixMultiplication = MPSMatrixMultiplication(
             device: Device,
             transposeLeft: false,
@@ -45,13 +44,13 @@ public class MPSMultiplication {
 
     public func run() -> CFTimeInterval {
         let interval = TimeInterval {
-            guard Device != nil else {
-                fatalError("Error: This device does not support Metal")
-            }
-
-            guard MPSSupportsMTLDevice(Device) else {
-                fatalError("Error: This device does not support Metal Performance Shaders")
-            }
+//            guard Device != nil else {
+//                fatalError("Error: This device does not support Metal")
+//            }
+//
+//            guard MPSSupportsMTLDevice(Device) else {
+//                fatalError("Error: This device does not support Metal Performance Shaders")
+//            }
             
             let commandBuffer = self.commandQueue.makeCommandBuffer()
             self.matrixMultiplication.encode(commandBuffer: commandBuffer, leftMatrix: self.MPSMatrixA, rightMatrix: self.MPSMatrixB, resultMatrix: self.MPSMatrixC)
